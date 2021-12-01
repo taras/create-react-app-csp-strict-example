@@ -8,7 +8,7 @@ config.plugins.push(new ScriptExtHtmlWebpackPlugin({
   custom: {
     test: /\.js$/,
     attribute: "nonce",
-    value: "{{ cspNonce }}"
+    value: "*CSP_NONCE*"
   }
 }))
 

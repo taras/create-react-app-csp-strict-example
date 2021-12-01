@@ -6,6 +6,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        ENABLED_MODULES: set-misc
     volumes:
       - '.:/app'
       - '/app/node_modules'
