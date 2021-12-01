@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  csp:
+    container_name: csp
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - 3001:80
