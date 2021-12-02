@@ -13,3 +13,5 @@ services:
       - '/app/node_modules'
     ports:
       - 3001:80
+    environment:
+      NODE_ENV: 'production'

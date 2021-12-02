@@ -5,17 +5,17 @@ ENV PATH /app/node_modules/.bin:$PATH
 
 COPY package.json ./
 
+RUN npm install -g npm@8.1.4
+
 RUN npm cache clean --force
 
 RUN npm install --production
-
-RUN npm install --save-dev rewire
 
 COPY . ./
 
 RUN chmod +x ./scripts/*
 
-RUN npm run build
+RUN NODE_OPTIONS="--max-old-space-size=8192" npm run build
 
 FROM olegozimok/nginx-extras
 
