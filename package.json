@@ -42,7 +42,6 @@
     "react-router-dom": "5.2.0",
     "react-scripts": "4.0.3",
     "rewire": "^5.0.0",
-    "script-ext-html-webpack-plugin": "^2.1.5",
     "swagger-ui-react": "^4.1.2",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"

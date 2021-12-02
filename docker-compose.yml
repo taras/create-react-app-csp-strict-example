@@ -11,6 +11,7 @@ services:
     volumes:
       - '.:/app'
       - '/app/node_modules'
+      - './logs:/root/.npm/_logs/'
     ports:
       - 3001:80
     environment:

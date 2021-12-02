@@ -15,7 +15,7 @@ COPY . ./
 
 RUN chmod +x ./scripts/*
 
-RUN NODE_OPTIONS="--max-old-space-size=8192" npm run build
+RUN NODE_OPTIONS="--max-old-space-size=4096" npm run build
 
 FROM olegozimok/nginx-extras
 
