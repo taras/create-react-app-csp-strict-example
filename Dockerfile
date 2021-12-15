@@ -3,19 +3,7 @@ WORKDIR /app
 
 ENV PATH /app/node_modules/.bin:$PATH
 
-COPY package.json ./
-
-RUN npm install -g npm@8.1.4
-
-RUN npm cache clean --force
-
-RUN npm install --production
-
-COPY . ./
-
-RUN chmod +x ./scripts/*
-
-RUN NODE_OPTIONS="--max-old-space-size=4096" npm run build
+COPY ./build /app/build
 
 FROM olegozimok/nginx-extras
 
