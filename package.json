@@ -45,5 +45,15 @@
     "swagger-ui-react": "^4.1.2",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
+  },
+  "resolutions": {
+    "netlify-cms-core": "./vendors/netlify-cms-core-v2.54.3.tgz",
+    "netlify-cms": "./vendors/netlify-cms-v2.10.183.tgz",
+    "netlify-cms-lib-auth": "./vendors/netlify-cms-lib-auth-v2.4.2.tgz",
+    "netlify-cms-lib-util": "./vendors/netlify-cms-lib-util-v2.15.0.tgz",
+    "netlify-cms-lib-widgets": "./vendors/netlify-cms-lib-widgets-v1.7.0.tgz",
+    "netlify-cms-locales": "./vendors/netlify-cms-locales-v1.38.1.tgz",
+    "netlify-cms-media-library-cloudinary": "./vendors/netlify-cms-media-library-cloudinary-v1.3.10.tgz",
+    "netlify-cms-media-library-uploadcare": "./vendors/netlify-cms-media-library-uploadcare-v0.5.10.tgz"
   }
 }
