@@ -11,7 +11,7 @@ export const getCMSConfig = (cmsRole: CMSRole): CmsConfig => {
     load_config_file: false,
     backend: {
       name: 'github',
-      repo: 'dagda1/create-react-app-csp-strict-example',
+      repo: 'taras/create-react-app-csp-strict-example',
       open_authoring: false,
       auth_scope: 'repo',
       branch: 'main',
